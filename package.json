@@ -7,7 +7,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "cz": "czg",
-    "changelog": "node ./generate-changelog.js && conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "changelog": "node ./updateVersion.js && conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "prepare": "husky install"
   },
   "dependencies": {
